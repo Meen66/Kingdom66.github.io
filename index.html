@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ศูนย์ความรู้ธุรกิจครบวงจร</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Business Knowledge Hub" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li class="dropdown">
+                        <a href="#">บทความ</a>
+                        <div class="dropdown-content">
+                            <a href="articles/finance.html">การเงิน</a>
+                            <a href="articles/marketing.html">การตลาด</a>
+                            <a href="articles/management.html">การจัดการ</a>
+                            <a href="articles/startup.html">สตาร์ทอัพ</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>ความรู้ธุรกิจที่คุณต้องการ</h1>
+            <p>แหล่งข้อมูลครบวงจรสำหรับผู้ประกอบการและนักธุรกิจ</p>
+            <a href="#featured" class="btn">เริ่มเรียนรู้</a>
+        </section>
+
+        <section id="featured" class="featured-articles">
+            <h2>บทความเด่น</h2>
+            <div class="article-grid">
+                <article class="card">
+                    <img src="images/finance-thumb.jpg" alt="การเงิน">
+                    <h3>การจัดการการเงินสำหรับธุรกิจ SME</h3>
+                    <p>เรียนรู้วิธีการบริหารการเงินเบื้องต้นที่ทุกธุรกิจควรรู้</p>
+                    <a href="articles/finance.html" class="read-more">อ่านต่อ</a>
+                </article>
+                
+                <article class="card">
+                    <img src="images/marketing-thumb.jpg" alt="การตลาด">
+                    <h3>กลยุทธ์การตลาดดิจิทัล 2024</h3>
+                    <p>เทคนิคการตลาดออนไลน์ที่ได้ผลในยุคปัจจุบัน</p>
+                    <a href="articles/marketing.html" class="read-more">อ่านต่อ</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Business Knowledge Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
