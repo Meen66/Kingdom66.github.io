@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือเริ่มต้นธุรกิจออนไลน์</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--dark);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: var(--secondary);
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Business Sections */
+        .business-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .business-section h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+        
+        .business-section h3 {
+            color: var(--dark);
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .sidebar h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+        }
+        
+        .sidebar li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .sidebar a {
+            color: var(--dark);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .sidebar a:hover {
+            color: var(--secondary);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        /* Tips Box */
+        .tip-box {
+            background: #e3f2fd;
+            border-left: 4px solid var(--secondary);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        /* Step by Step */
+        .step {
+            display: flex;
+            margin-bottom: 1.5rem;
+        }
+        
+        .step-number {
+            background: var(--secondary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>คู่มือเริ่มต้นธุรกิจออนไลน์</h1>
+            <p>เรียนรู้ขั้นตอนการสร้างธุรกิจออนไลน์ตั้งแต่เริ่มต้นจนประสบความสำเร็จ</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#planning">การวางแผน</a></li>
+                <li><a href="#marketing">การตลาด</a></li>
+                <li><a href="#finance">การเงิน</a></li>
+                <li><a href="#legal">กฎหมาย</a></li>
+                <li><a href="#tools">เครื่องมือ</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="main-content">
+            <main>
+                <section id="planning" class="business-section">
+                    <h2>ขั้นตอนการวางแผนธุรกิจ</h2>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>กำหนดแนวคิดธุรกิจ</h3>
+                            <p>เลือกผลิตภัณฑ์หรือบริการที่คุณสนใจและมีความรู้ ศึกษาความต้องการของตลาดและกลุ่มลูกค้าเป้าหมาย</p>
+                            <div class="tip-box">
+                                <strong>เคล็ดลับ:</strong> เริ่มจากสิ่งที่คุณชอบหรือมีความเชี่ยวชาญจะทำให้มีโอกาสประสบความสำเร็จสูงกว่า
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>วิเคราะห์ตลาด</h3>
+                            <p>ศึกษาคู่แข่ง วิเคราะห์จุดแข็งจุดอ่อนของธุรกิจคุณ (SWOT Analysis) และหาจุดต่างที่ทำให้ธุรกิจคุณโดดเด่น</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>เขียนแผนธุรกิจ</h3>
+                            <p>จัดทำเอกสารแผนธุรกิจที่ครอบคลุมทุกด้าน ทั้งการตลาด การดำเนินงาน การเงิน และแผนการเติบโต</p>
+                            <a href="#" class="btn">ดาวน์โหลดเทมเพลตแผนธุรกิจ</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="marketing" class="business-section">
+                    <h2>กลยุทธ์การตลาดออนไลน์</h2>
+                    
+                    <h3>1. สร้างแบรนด์ให้แข็งแกร่ง</h3>
+                    <p>ออกแบบโลโก้ สไตล์การสื่อสาร และเอกลักษณ์ของแบรนด์ให้ชัดเจน</p>
+                    
+                    <h3>2. ใช้โซเชียลมีเดีย</h3>
+                    <ul>
+                        <li>Facebook - สำหรับกลุ่มลูกค้าทั่วไป</li>
+                        <li>Instagram - สำหรับธุรกิจที่เน้นภาพ</li>
+                        <li>LINE OA - สำหรับบริการลูกค้า</li>
+                        <li>TikTok - สำหรับเข้าถึงกลุ่มวัยรุ่น</li>
+                    </ul>
+                    
+                    <h3>3. SEO และ Content Marketing</h3>
+                    <p>สร้างเนื้อหาที่มีคุณภาพเพื่อดึงดูดผู้ชมผ่านการค้นหาของ Google</p>
+                    <a href="#" class="btn">เรียนรู้ SEO พื้นฐาน</a>
+                </section>
+                
+                <section id="finance" class="business-section">
+                    <h2>การจัดการการเงินสำหรับธุรกิจเริ่มต้น</h2>
+                    
+                    <h3>1. บัญชีธุรกิจแยกจากส่วนตัว</h3>
+                    <p>เปิดบัญชีธุรกิจแยกเพื่อการจัดการที่ชัดเจน</p>
+                    
+                    <h3>2. ระบบบันทึกรายรับรายจ่าย</h3>
+                    <p>ใช้แอปพลิเคชันเช่น PromptPay, Wave หรือโปรแกรมบัญชี SME</p>
+                    
+                    <h3>3. การคำนวณต้นทุนและกำไร</h3>
+                    <p>เรียนรู้การคำนวณต้นทุนสินค้า ค่าใช้จ่ายดำเนินงาน และราคาขายที่เหมาะสม</p>
+                    
+                    <div class="tip-box">
+                        <strong>สูตรคำนวณราคาขายพื้นฐาน:</strong><br>
+                        ราคาขาย = (ต้นทุนสินค้า + ค่าใช้จ่าย) × (1 + เปอร์เซ็นต์กำไร)
+                    </div>
+                </section>
+            </main>
+            
+            <aside class="sidebar">
+                <h3>บทความแนะนำ</h3>
+                <ul>
+                    <li><a href="#">10 ความผิดพลาดของธุรกิจเริ่มต้น</a></li>
+                    <li><a href="#">วิธีเลือกชื่อแบรนด์ให้ปัง</a></li>
+                    <li><a href="#">เครื่องมือฟรีสำหรับธุรกิจออนไลน์</a></li>
+                    <li><a href="#">เทคนิคขายของออนไลน์ให้รวย</a></li>
+                </ul>
+                
+                <h3 style="margin-top: 2rem;">เครื่องมือจำเป็น</h3>
+                <ul>
+                    <li><a href="#">Canva - ออกแบบกราฟิก</a></li>
+                    <li><a href="#">Google Analytics - วิเคราะห์ข้อมูล</a></li>
+                    <li><a href="#">Wave - บัญชีฟรี</a></li>
+                    <li><a href="#">Mailchimp - Email Marketing</a></li>
+                </ul>
+                
+                <div style="margin-top: 2rem; background: #f5f5f5; padding: 1rem; border-radius: 8px;">
+                    <h3>คำนวณต้นทุน</h3>
+                    <p>ใช้เครื่องมือคำนวณราคาขายที่เหมาะสมสำหรับสินค้าของคุณ</p>
+                    <a href="#" class="btn" style="display: block; text-align: center;">เปิดเครื่องมือ</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 คู่มือธุรกิจออนไลน์. สงวนลิขสิทธิ์.</p>
+            <p style="margin-top: 0.5rem;">ติดต่อ: business@example.com | โทร: 02-123-4567</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Current year for footer
+        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} คู่มือธุรกิจออนไลน์. สงวนลิขสิทธิ์.`;
+    </script>
+</body>
+</html>
